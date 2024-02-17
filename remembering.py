@@ -6,6 +6,5 @@ print(decena(5))
 num = 1
 while num < 10:
     print(decena(num))
-    num = num + 1
+    num = num + 3
     
-
