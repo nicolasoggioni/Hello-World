@@ -15,6 +15,9 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
     )
     return response.choices[0].message.content
 
+
+### TEsting the OpenAI Calling 
+
 prompt = input("Enter your prompt here: ")
 
 texto = get_completion(prompt)
