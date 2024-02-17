@@ -1,11 +1,12 @@
 import os
 from openai import OpenAI
 
+### Setting the environment
 client = OpenAI(
-    # This is the default and can be omitted
-    api_key=os.getenv('OPENAI_API_KEY')
+        api_key=os.getenv('OPENAI_API_KEY')
     )
 
+### Function definition
 def get_completion(prompt, model="gpt-3.5-turbo"):
     messages = [{"role": "user", "content": prompt}]
     response = client.chat.completions.create(
