@@ -8,4 +8,3 @@ while num < 10:
     print(decena(num))
     num = num + 3
     
-
